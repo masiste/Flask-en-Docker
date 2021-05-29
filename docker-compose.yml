@@ -1,6 +1,5 @@
-version: '3.7'
-
-services:
+ version: '3.7'
+ services:
   web:
     build: ./services/web
     command: python manage.py run -h 0.0.0.0
@@ -23,5 +22,5 @@ services:
       - POSTGRES_PASSWORD=hello_flask
       - POSTGRES_DB=hello_flask_dev
 
-volumes:
+ volumes:
   postgres_data:
